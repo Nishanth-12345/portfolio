@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import Js from "../../img/download-js.png";
+import Node from "../../img/download-node.png";
+import Reactjs from "../../img/download-react.png";
+import Html from "../../img/html.png";
+import Css from "../../img/css.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -21,18 +21,17 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+            Working in these technologies.
           </span>
-          <span>Brands & Clients</span>
+          <span>Responsibilities</span>
           <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+            Integrated RESTful APIs for a websites and mobile apps, enhancing user
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            experience with seamless data interactions and real-time updates.
             <br />
-            y dummy text of printingLorem
+            Implemented CSS animations and transitions to improve user
             <br />
-            ispum is simpley dummy text of printing
+            engagement and interface responsiveness
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
@@ -54,19 +53,19 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={Html} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={Css} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={Reactjs} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={Node} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={Js} alt="" />
           </div>
         </motion.div>
         {/* background Circles */}

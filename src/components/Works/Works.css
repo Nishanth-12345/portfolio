@@ -87,10 +87,13 @@
   background: "none";
   box-shadow: var(--smboxShadow);
   background: white;
+  overflow: hidden;
 }
 
 .w-secCircle > img {
-  transform: scale(0.6);
+  transform: scale(2.2);
+  width: auto;
+  height: calc(100% - 57px);
 }
 
 .w-backCircle {
