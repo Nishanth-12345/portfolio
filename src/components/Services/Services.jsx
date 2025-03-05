@@ -22,11 +22,11 @@ const Services = () => {
   return (
     <div className="services" id="services">
       {/* left side */}
-      <div className="awesome">
+      <div className={`awesome ${darkMode ? "white" : ""}`}>
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
+        <span>My Awesome</span>
         <span>services</span>
-        <spane>
+        <span>
           Developed UI components and implemented complex UI/UX designs for
           <br />
           various projects, including ecommerce websites and mobile applications.
@@ -34,9 +34,7 @@ const Services = () => {
           Integrated RESTful APIs for a websites and mobile apps, enhancing user
           <br />
           experience with seamless data interactions and real-time updates
-
-
-        </spane>
+        </span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>
@@ -65,7 +63,7 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            detail={"Html, Css, JavaScript, React, Nextjs, Nodejs, Express, MySQL"}
           />
         </motion.div>
         {/* 3rd */}

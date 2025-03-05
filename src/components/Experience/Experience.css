@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  padding-top: 16rem;
-  margin-bottom: 8rem;
+  padding-top: 18rem;
+  margin-bottom: 50px;
   /* darkmode */
   color: var(--black);
 }
@@ -47,6 +47,7 @@
 @media screen and (max-width: 780px) {
     .experience{
         padding-top: 0;
+        margin-bottom: 10rem;
     }
 }
 

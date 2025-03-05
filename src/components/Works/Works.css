@@ -1,9 +1,8 @@
 .works {
   padding: 0 3rem 0 3rem;
   display: flex;
-  height: 90vh;
-  margin-top: 4rem;
-
+  margin-top: 0rem;
+  margin-bottom: 100px;
   /* scroll */
   align-items: center;
 }
@@ -51,6 +50,9 @@
   background: white;
   /* darkMode */
   z-index: 2;
+}
+.awesome.white span{
+  color: #fff;
 }
 .w-mainCircle > * {
   position: absolute;

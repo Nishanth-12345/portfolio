@@ -25,15 +25,20 @@ const navbar = () => {
               </Link>
             </li>
             <li>
+              <Link to="portfolio" spy={true} smooth={true}>
+                Protfolio
+              </Link>
+            </li>
+            <li>
               <Link to="works" spy={true} smooth={true}>
                 Experience
               </Link>
             </li>
           </ul>
         </div>
-        <Link to="contact" spy={true} smooth={true}>
+        <a href="mailto:nishanth70000@gmail.com" >
         <button className="button n-button">Contact</button>
-        </Link>
+        </a>
       </div>
     </div>
   );

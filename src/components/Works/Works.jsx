@@ -8,6 +8,7 @@ import Css from "../../img/css.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from 'react-scroll'
+
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -18,13 +19,13 @@ const Works = () => {
     <div className="works" id="works">
       {/* left side */}
       <div className="w-left">
-        <div className="awesome">
+        <div className={`awesome ${darkMode ? "white" : ""}`}>
           {/* dark Mode */}
-          <span style={{ color: darkMode ? "white" : "" }}>
+          <span>
             Working in these technologies.
           </span>
           <span>Responsibilities</span>
-          <spane>
+          <span>
             Integrated RESTful APIs for a websites and mobile apps, enhancing user
             <br />
             experience with seamless data interactions and real-time updates.
@@ -32,10 +33,10 @@ const Works = () => {
             Implemented CSS animations and transitions to improve user
             <br />
             engagement and interface responsiveness
-          </spane>
-          <Link to="contact" smooth={true} spy={true}>
-            <button className="button s-button">Hire Me</button>
-          </Link>
+          </span>
+          <a href="mailto:nishanth70000@gmail.com" >
+            <button className="button s-button">Hire me</button>
+          </a>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}

@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
@@ -12,7 +11,7 @@ import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -25,22 +24,25 @@ const Intro = () => {
     <div className="Intro" id="Intro">
       {/* left name side */}
       <div className="i-left">
-        <div className="i-name">
-          {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+        <div className={`i-name ${darkMode ? "white" : ""}`}>
+          <span>Hy! I Am</span>
           <span>Nishanth</span>
           <span>
             Frontend Developer with experience in web designing
-            and development, producting the Quality work
+            and development,<br></br> producting the Quality work
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
+        <a href="mailto:nishanth70000@gmail.com" >
           <button className="button i-button">Hire me</button>
-        </Link>
+        </a>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
+          <a href="https://github.com/Nishanth-12345/">
+            <img src={Github} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/nishanth6035/">
+            <img src={LinkedIn} alt="" />
+          </a>
           <img src={Instagram} alt="" />
         </div>
       </div>
@@ -48,7 +50,7 @@ const Intro = () => {
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-    
+
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
@@ -74,7 +76,6 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          {/* floatinDiv mein change hy dark mode ka */}
           <FloatinDiv img={thumbup} text1="Experienced" text2="Designer" />
         </motion.div>
 
